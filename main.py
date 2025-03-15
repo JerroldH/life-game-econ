@@ -19,9 +19,9 @@ def main():
     pygame.init()
     clock = display.startClock()
     frame_count = 0
-    frame_rate = 24
+    frame_rate = 50
 
-    grid_size = (30, 30)  # 可调小一点方便可视化
+    grid_size = (150, 150)  # 可调小一点方便可视化
 
     # 初始化网格
     g = control.Grid(grid_size, control.initialize_clans)

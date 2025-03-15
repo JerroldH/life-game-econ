@@ -13,7 +13,7 @@ import sys
 from PIL import Image
 
 CELL_SIZE = 5
-CELL_PAD = CELL_SIZE // 5
+CELL_PAD = 0
 
 ANIMATION_FRAME_COUNT = 200
 ANIMATION_FILENAME = 'new_economic_life_game.gif'
