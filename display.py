@@ -33,10 +33,10 @@ def draw(g):
 
 def draw_leaderboard():
     font = pygame.font.SysFont(None, 24)
-    x_offset = 620
+    x_offset = 420
     y_offset = 10
-    w, h = 170, 250
-    pygame.draw.rect(SCREEN, (200, 200, 200), [x_offset-10, 0, w, h])
+    w, h = 400, 450
+    pygame.draw.rect(SCREEN, (200, 200, 200), [x_offset, 0, w, h])
     living_clans = [c for c in control.CLANS.values() if c.population() > 0]
     sorted_clans = sorted(living_clans, key=lambda c: c.wealth, reverse=True)[:5]
     for clan in sorted_clans:
